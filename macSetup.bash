@@ -613,6 +613,13 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 #defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ###############################################################################
+# git                                                                         #
+###############################################################################
+
+# Set macvim as default git editor 
+git config --global core.editor "mvim -f"
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
