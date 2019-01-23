@@ -27,6 +27,8 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # Menu bar: show remaining battery time (on pre-10.8); hide percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "YES"
+# https://twitter.com/dmartincy/status/1087029373281189888
+defaults write com.apple.menuextra.battery ShowAllTopProcesses -bool true
 
 # Menu bar: hide the useless Time Machine and Volume icons
 #defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
@@ -616,7 +618,7 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 # git                                                                         #
 ###############################################################################
 
-# Set macvim as default git editor 
+# Set macvim as default git editor
 git config --global core.editor "mvim -f"
 
 ###############################################################################
